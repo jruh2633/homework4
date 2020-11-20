@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Deck : MonoBehaviour
 {
-	//Suits
+	
 	public Sprite suitClub;
 	public Sprite suitDiamond;
 	public Sprite suitHeart;
@@ -18,7 +18,7 @@ public class Deck : MonoBehaviour
 	public Sprite cardFront;
 	public Sprite cardFrontGold;
 
-	//Prefabs
+	
 	public GameObject prefabSprite;
 	public GameObject prefabCard;
 
@@ -31,10 +31,10 @@ public class Deck : MonoBehaviour
 	public Transform deckAnchor;
 	public Dictionary<string, Sprite> dictSuits;
 
-	//InitDeck is called by Prospectpr when it is ready
+
 	public void InitDeck(string deckXMLText)
 	{
-		//This creates an anchor for all the Card GameObjects in the Hierarchy
+		
 		if (GameObject.Find("_Deck") == null)
 		{
 			GameObject anchorGO = new GameObject("_Deck");
@@ -356,7 +356,7 @@ public class Deck : MonoBehaviour
 		return (null);
 	}
 
-	//Shuffle the Cards in Deck.cards  play sound when shuffling!!
+	
 	static public void Shuffle(ref List<Card> oCards)
 	{
 		
